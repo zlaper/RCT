@@ -1,49 +1,125 @@
-<!doctype html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Rocket Valley Tycoon</title>
-    <style>
-    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
-	* {
-	  margin: 0;
-	  padding: 0;
-	}
-	
-	canvas {
-	  width: 100%;
-	  height: 100%;
-	  position: absolute;
-	}
-    </style>
+    <title>
+      Rocket Cola Studio
+    </title>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/devices.css">
   </head>
   <body>
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 402653184,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    backgroundColor: "#222C36",
-    splashStyle: "Light",
-    dataUrl: "Release/Page.data",
-    codeUrl: "Release/Page.js",
-    asmUrl: "Release/Page.asm.js",
-    memUrl: "Release/Page.mem",
-  };
-</script>
-<script src="Release/UnityLoader.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-88582117-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <header class="header">
+      <div class="container-lrg">
+        <div class="col-12 spread">
+          <div>
+            <a class="logo">
+	            <img src="img/rocketlogoS.png" alt="Rocket Cola Studio">
+            </a>
+          </div>
+          <div>
+            <a class="nav-link" href="https://twitter.com/RocketColaSt" target="_blank">
+              Twitter
+            </a>
+            <a class="nav-link" href="https://www.facebook.com/rocketcolastudio/" target="_blank">
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-sml ">
+        <div class="col-12">
+          <h1 class="heading text-center">
+            It's Refreshing!<br>
+          </h1>
+        </div>
+      </div>
+      <div class="container-lrg">
+        <div class="centerdevices col-12">
+          <div class="browserwrapper">
+            <div class="browser">
+              <div class="mask">
+            <a class="nav-link" href="http://rocketcolastudio.com/RVT/" target="_blank">
+                <img class="mask-img" src="img/rvt1.png">
+            </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-sml">
+        <div class="col-12 text-center">
+          <h2 class="paragraph">
+            Rocket Valley Tycoon
+          </h2>
+          <div class="ctas">
+            <a class="ctas-button" href="">
+              <img src="img/applelogo.svg">
+              <span>
+                App Store
+              </span>
+            </a>
+            <a class="ctas-button" href="">
+              <img src="img/androidlogo.svg">
+              <span>
+                Play Store
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="socialproof">
+      <div class="container-sml">
+        <div class="flex text-center">
+          <div class="col-12">
+            <h4 class="subheading">
+              “Anyone who sits on top of the largest hydrogen-oxygen fueled system in the world, knowing they’re going to light the bottom, and doesn’t get a little worried, does not fully understand the situation.”
+            </h4>
+            <p class="paragraph">
+              John Young, after being asked if he was nervous about making the first Space Shuttle flight in 1981
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container-sml flex text-center">
+        <div class="col-12">
+          <h3 class="heading">
+            We create Refreshing Games!!
+          </h3>
+          <div class="ctas">
+            <a class="ctas-button" href="">
+              Sign Up
+            </a>
+            <a class="ctas-button-2" href="">
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-lrg footer-nav flex">
+        <div class="col-6">
+          <a class="logo">
+            Rocket Cola Studio
+          </a>
+          <a class="nav-link2">
+            ©2016
+          </a>
+        </div>
+        <div class="col-5 centervertical">
+          <a class="nav-link2" href="https://twitter.com/RocketColaSt" target="_blank">
+            Twitter
+          </a>
+          <a class="nav-link2" href="https://www.facebook.com/rocketcolastudio/" target="_blank">
+            Facebook
+          </a>
+          <a class="nav-link2" href="mailto:info@rocketcolastudio.com">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
