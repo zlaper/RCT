@@ -22,7 +22,7 @@
     <script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 402653184,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    errorhandler: function(){ return true; },			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
     backgroundColor: "#222C36",
     splashStyle: "Light",
