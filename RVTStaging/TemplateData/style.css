@@ -4,7 +4,7 @@
 
 html,body,div,canvas { margin: 0; padding: 0; }
 ::-moz-selection { color: #333; text-shadow: none; }
-::selection {  color: #333; text-shadow: none; }
+::selection {  color: #333; text-shadow: none; background: #cacaca;}
 .clear:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 .clear { display: inline-table; clear: both; }
 /* Hides from IE-mac \*/ * html .clear { height: 1%; } .clear { display: block; } /* End hide from IE-mac */
@@ -61,4 +61,35 @@ html, body { font-family: Helvetica, Verdana, Arial, sans-serif; }
       text-align: center;
       font-size: 8px;
       margin-top: 10px;
+    }
+	    
+	button {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+     
+    div#inputOverlay{
+      top:0px;
+      text-align:center;
+      margin:0;
+      padding:10px;
+      width:960px;
+      height:640px;
+      background-color: rgba(70, 68, 87, 0.76);
+      z-index: 1;
+      position: absolute;
+    }
+     
+    textArea{
+      width:600px;
+      height:200px;
+      padding:5px;
+      margin:10px;
     }

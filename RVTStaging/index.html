@@ -14,6 +14,23 @@
     </style>
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
+    <script src="https://cdn1.kongregate.com/javascripts/kongregate_api.js"></script>
+    <script type="text/javascript">
+        <!--
+            function startKongregatePurchase(id){
+                if(!kongregate.services.isGuest()){
+                    kongregate.mtx.purchaseItems([id], function(result){
+						console.log("purchaseItems: " + result.success);
+                        if(result.success){
+                            kongregateUnitySupport.getUnityObject().SendMessage("KongregateAPI", "OnKongregatePurchaseItem", 'true|'+id);
+                        }else{
+                            kongregateUnitySupport.getUnityObject().SendMessage("KongregateAPI", "OnKongregatePurchaseItem", 'false|'+id);
+                        }
+                    });
+                }
+            }
+        -->
+        </script>
   </head>
   <body class="template">
     <div class="template-wrap clear">
@@ -48,7 +65,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-88582117-1', 'auto');
+  ga('create', 'UA-88582117-2', 'auto');
   ga('send', 'pageview');
 
 </script>
