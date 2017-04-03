@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 419430400,
+"dataUrl": "RVTStaging.data.unityweb",
+"asmCodeUrl": "RVTStaging.asm.code.unityweb",
+"asmMemoryUrl": "RVTStaging.asm.memory.unityweb",
+"asmFrameworkUrl": "RVTStaging.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#802727"
+}
