@@ -27,10 +27,12 @@ html, body { font-family: Helvetica, Verdana, Arial, sans-serif; }
 	width: 190px;
 	height: 12px;
 	background-color: #8cb792;
+	z-index: 1;
     }
 
-    div#progressBG {
+    div#loadingBox {
 	left: 0px;
 	top: 0px;
 	position: absolute;
+	z-index: 0;
     }
