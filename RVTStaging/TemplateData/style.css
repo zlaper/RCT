@@ -24,7 +24,7 @@ html, body { font-family: Helvetica, Verdana, Arial, sans-serif; }
 	left: 384px;
 	top: 400px;
 	position: absolute;
-	width: 190px;
+	width: 1px;
 	height: 12px;
 	background-color: #8cb792;
 	z-index: 1;
