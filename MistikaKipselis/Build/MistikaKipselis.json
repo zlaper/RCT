@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "MistikaKipselis.data.unityweb",
+"asmCodeUrl": "MistikaKipselis.asm.code.unityweb",
+"asmMemoryUrl": "MistikaKipselis.asm.memory.unityweb",
+"asmFrameworkUrl": "MistikaKipselis.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
