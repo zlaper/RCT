@@ -1,0 +1,284 @@
+/*-------------
+ 	General
+-------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font: 20px 'Open Sans', sans-serif;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	background-color: #9a2f2f;
+	color: #fff;
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.9;
+}
+a:hover {
+	opacity: 1;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.top > * {
+  vertical-align: top;
+}
+
+/*----------------
+ 	Top Section
+----------------*/
+
+.top {
+	width: 100%;
+	position: relative;
+	justify-content: center;
+	height: 360px;
+	min-height: 360px;
+	text-align: center;
+}
+.top .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.top .logo {
+	z-index: 2;
+}
+.top .refreshing {
+	position: absolute;
+	bottom: 11px;
+	right: 0;
+	z-index: 2;
+}
+.top-links {
+	position: absolute;
+	top: 290px;
+	left: 250px;
+	z-index: 1;
+}
+
+/*----------------
+ 	Rvt Section
+----------------*/
+
+.rvt {
+	width: 100%;
+	top: 0px;
+	position: relative;
+	height: 800px;
+	min-height: 800px;
+	text-align: center;
+	vertical-align: middle;
+}
+.rvtimages {
+	width: 100%;
+	height: 100%;
+	background-color: #9a2f2f;
+	z-index: -10;
+}
+.rvtbg {
+	position: relative;
+	top: -40px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.rvtmg {
+	position: absolute;
+	top: 380px;
+	left: -70px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.rvtfg {
+	position: absolute;
+	top: -30px;
+	left: 0px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.rvtplay {
+	position: absolute;
+	top: 600px;
+	z-index: 10;
+}
+
+/*----------------
+ 	About Section
+----------------*/
+
+.about {
+	width: 100%;
+	position: relative;
+	justify-content: center;
+	height: 545px;
+	min-height: 545px;
+	text-align: center;
+}
+.about .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.aboutus {
+	color: #393430;
+	position: relative;
+	width: 800px;
+	top: 70px;
+	left: 180px;
+	z-index: 1;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*----------------
+ 	Blue Section
+----------------*/
+
+.blue {
+	width: 100%;
+	top: -250px;
+	position: relative;
+	height: 850px;
+	min-height: 850px;
+}
+.blueimages {
+	width: 100%;
+	height: 100%;
+	background-color: #628983;
+	z-index: -10;
+}
+.star1 {
+	position: relative;
+	top: 400px;
+	left: 40px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.star2 {
+	position: absolute;
+	bottom: 0px;
+	right: 100px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.star3 {
+	position: absolute;
+	width: 32px;
+	height: 49px;
+	bottom: -10px;
+	right: 150px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.news {
+	position: absolute;
+	width: 879px;
+	height: 563px;
+	bottom: 50px;
+	z-index: 2;
+}
+.news .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+.ournews {
+	color: #393430;
+	position: absolute;
+	width: 700px;
+	top: 110px;
+	left: 50px;
+	z-index: 10;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*-------------
+ 	Footer
+-------------*/
+
+footer {
+	position: relative;
+	bottom: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #9a2f2f;
+	
+	width: 100%;
+	height: 450px;
+	min-height: 450px;
+}
+.footer-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.footer-title {
+	position: relative;
+	top: 100px;
+	z-index: 1;
+}
+.footer-links {
+	position: relative;
+	top: 200px;
+	z-index: 1;
+}
+.footerstar {
+	position: absolute;
+	bottom: -200px;
+	left: 150px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	z-index: 2;
+}
