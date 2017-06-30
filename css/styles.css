@@ -6,11 +6,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-html {
-	font: 20px 'Open Sans', sans-serif;
-	line-height: 1.5;
+html, body {
 	text-rendering: optimizeLegibility;
-	background-color: #9a2f2f;
+	/* background-color: #9a2f2f; */
 	color: #fff;
 	overflow-x: hidden;
 }
@@ -18,152 +16,238 @@ a {
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-	opacity: 0.9;
-}
-a:hover {
 	opacity: 1;
 }
-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+a:hover {
+	opacity: 0.8;
 }
-.top > * {
-  vertical-align: top;
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+.top {
+	height: 360px;
+}
+.refreshing {
+	top: 177px;
+}
+.rvtsize {
+	height: 600px;
+}
+.aboutus {
+	padding-top: 9em;
+}
+.ournews {
+	top: 8em;
+}
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+.top {
+	height: 300px;
+}
+.logo {
+	max-width: 50%;
+	height: auto;
+}
+.refreshing {
+	top: 171px
+}
+.rvtsize {
+	height: 450px;
+}
+.aboutus {
+	padding-top: 6em;
+}
+.ournews {
+	top: 6em;
+}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.top {
+	height: 250px;
+}
+.logo {
+	max-width: 50%;
+	height: auto;
+}
+.refreshing {
+	top: 122px
+}
+.rvtsize {
+	height: 380px;
+}
+.lead {
+	font-size: 16px !important;
+}
+.aboutus {
+	padding-top: 6em;
+}
+.ournews {
+	top: 4em;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.top {
+	height: 160px;
+}
+.logo {
+	max-width: 50%;
+	height: auto;
+}
+.rvtsize {
+	height: 320px;
+}
+.rvtdescription{
+	position: absolute;
+	width: 220px !Important;
+	top: 28% !Important;
+	right: 5px;
+	text-align: center;
+	margin: auto;
+}
+.aboutus {
+	padding-top: 4em;
+}
+.ournews {
+	top: 2em;
+}
+}
 /*----------------
  	Top Section
 ----------------*/
 
 .top {
-	width: 100%;
-	position: relative;
-	justify-content: center;
-	height: 360px;
-	min-height: 360px;
+	background: url('../images/top.png');
+	background-repeat: repeat-x;
+	background-size: contain;
+	vertical-align: middle;
 	text-align: center;
+	padding-top: 3em;
+	position: relative;
+	z-index: 100;
 }
-.top .background-image {
+.refreshing {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-.top .logo {
-	z-index: 2;
-}
-.top .refreshing {
-	position: absolute;
-	bottom: 11px;
 	right: 0;
-	z-index: 2;
+	float: right;
 }
 .top-links {
 	position: absolute;
-	top: 290px;
-	left: 250px;
-	z-index: 1;
+	top: 1em;
+	right: 1em;
 }
-
 /*----------------
  	Rvt Section
 ----------------*/
-
 .rvt {
-	width: 100%;
-	top: 0px;
-	position: relative;
-	height: 800px;
-	min-height: 800px;
-	text-align: center;
-	vertical-align: middle;
-}
-.rvtimages {
-	width: 100%;
-	height: 100%;
-	background-color: #9a2f2f;
-	z-index: -10;
+	z-index: -11;
 }
 .rvtbg {
-	position: relative;
-	top: -40px;
-	user-drag: none;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+	max-width: 40%;
+	height: auto;
+	z-index: -20;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -15%;
+	bottom: 0;
+	margin: auto;
 }
 .rvtmg {
+	max-width: 100%;
+	height: auto;
+	z-index: -15;
 	position: absolute;
-	top: 380px;
-	left: -70px;
-	user-drag: none;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: -65%;
+	margin: auto;
 }
 .rvtfg {
+	max-width: 100%;
+	height: auto;
+	z-index: -10;
 	position: absolute;
-	top: -30px;
-	left: 0px;
-	user-drag: none;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+	left: 0;
+	right: 0;
+	top: -70%;
+	bottom: 0;
+	margin: auto;
+}
+.rvtdescription {
+	position: absolute;
+	width: 450px;
+	top: 30%;
+	right: 10px;
+	text-align: center;
+	margin: auto;
+}
+.rvtimages {
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 0;
 }
 .rvtplay {
 	position: absolute;
-	top: 600px;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+	max-width: 221px;
 	z-index: 10;
 }
-
 /*----------------
  	About Section
 ----------------*/
-
 .about {
-	width: 100%;
+	background: url('../images/aboutbg.png');
+	background-repeat: repeat-x;
+	background-size: contain;
 	position: relative;
-	justify-content: center;
-	height: 545px;
-	min-height: 545px;
-	text-align: center;
-}
-.about .background-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	height: auto;
 	z-index: 1;
+}
+.aboutbg {
+	background: url('../images/about.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+	vertical-align: middle;
+	max-width: 1920px !important;
+	height: 545px;
+	z-index: 2;
 }
 .aboutus {
-	color: #393430;
 	position: relative;
-	width: 800px;
-	top: 70px;
-	left: 180px;
-	z-index: 1;
+	left: 30%;
+	width: 45%;
+	color: #393430;
 	text-align: left;
 	vertical-align: top;
 }
-
 /*----------------
  	Blue Section
 ----------------*/
 
 .blue {
-	width: 100%;
+	width: 112%;
 	top: -250px;
 	position: relative;
+	left: -20px;
+	right: -20px;
+	margin: auto;
 	height: 850px;
 	min-height: 850px;
 }
@@ -171,12 +255,12 @@ section {
 	width: 100%;
 	height: 100%;
 	background-color: #628983;
-	z-index: -10;
+	z-index: -1;
 }
 .star1 {
 	position: relative;
-	top: 400px;
-	left: 40px;
+	top: 50%;
+	left: 5%;
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
@@ -186,8 +270,8 @@ section {
 }
 .star2 {
 	position: absolute;
-	bottom: 0px;
-	right: 100px;
+	bottom: -25%;
+	right: 15%;
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
@@ -199,8 +283,8 @@ section {
 	position: absolute;
 	width: 32px;
 	height: 49px;
-	bottom: -10px;
-	right: 150px;
+	bottom: -28%;
+	right: 18%;
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
@@ -209,56 +293,59 @@ section {
 	-ms-user-select: none;
 }
 .news {
+	background: url('../images/news.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	width: 80%;
+	/* whatever width you want */
+	display: inline-block;
 	position: absolute;
-	width: 879px;
-	height: 563px;
-	bottom: 50px;
+	
+	max-width: 879px;
+	max-height: 563px;
+	bottom: 10%;
+	left: -20px;
+	right: -20px;
+	margin: auto;
 	z-index: 2;
 }
-.news .background-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 5;
+.news:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
 }
 .ournews {
 	color: #393430;
-	position: absolute;
-	width: 700px;
-	top: 110px;
-	left: 50px;
+	position: relative;
+	width: 80%;
+	left: 5%;
+	right: 5%;
 	z-index: 10;
 	text-align: left;
 	vertical-align: top;
 }
-
 /*-------------
  	Footer
 -------------*/
 
-footer {
+.rcsfooter {
+	background: url('../images/footerbg.png');
+	background-repeat: repeat-x;
+	background-size: contain;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 450px;
+	
 	position: relative;
 	bottom: 250px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
 	color: #fff;
 	background-color: #9a2f2f;
-	
-	width: 100%;
-	height: 450px;
-	min-height: 450px;
-}
-.footer-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
 }
 .footer-title {
 	position: relative;
@@ -268,17 +355,28 @@ footer {
 .footer-links {
 	position: relative;
 	top: 200px;
-	z-index: 1;
+	vertical-align: super;
+}
+.footer-imagelink{
+	float:left;
 }
 .footerstar {
 	position: absolute;
 	bottom: -200px;
-	left: 150px;
+	left: 10%;
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+	z-index: 2;
+}
+.copyright{
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 38%;
+	margin: auto;
 	z-index: 2;
 }
