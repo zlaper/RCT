@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Rocket Valley</title>
+    <script src="Build/UnityLoader.js"></script>
+  <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json");
+    </script>
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		canvas, .webgl-content, #gameContainer {
+			width: 750px;
+			height: 100%;
+		}
+		body {
+			background-color: #1e1f26;
+		}
+    </style>
+</head>
+  <body>
+  <div id="gameContainer" style="position:absolute; margin: auto"></div>
+  </body>
+</html>
