@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-    <ModulePrefs></ModulePrefs>
+  <ModulePrefs>
+    <Link rel="payment.handler" href="https://Y369300MTuLB.preview.gamesparks.net/callback/Y369300MTuLB/nutaku/zpTqrNeTwYTCMKg61iDANaxLkF6FuUqn" />
+  </ModulePrefs>
 </Module>
