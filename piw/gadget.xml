@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Example WebGL Game" author="example" thumbnail="" screenshot="" height="1080" width="1920">
+  <ModulePrefs title="Pleasure Inc" author="rocketcolastudio" thumbnail="" screenshot="" height="1080" width="1920">
     <Require feature="opensocial-0.8" />
     <Require feature="opensocial-payment" />
     <Require feature="nutaku" />
@@ -35,9 +35,9 @@ function UnityProgress(gameInstance, progress) {
 
 function init() {
     gameInstance = UnityLoader.instantiate("gameContainer", "http://rocketcolastudio.com/piw/Build/piw.json", {onProgress: UnityProgress});
+	gadgets.window.adjustHeight();
 }
 gadgets.util.registerOnLoadHandler(init);
-gadgets.window.adjustHeight();
 </script>
 
 <body>
