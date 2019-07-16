@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
   <ModulePrefs title="Pleasure Inc" author="rocketcolastudio" thumbnail="" screenshot="" height="1080" width="1920">
+    <Require feature="dynamic-height" />
     <Require feature="opensocial-0.8" />
     <Require feature="opensocial-payment" />
     <Require feature="nutaku" />
