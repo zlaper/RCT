@@ -36,7 +36,7 @@ function UnityProgress(gameInstance, progress) {
 
 function init() {
     gameInstance = UnityLoader.instantiate("gameContainer", "http://rocketcolastudio.com/piw/Build/piw.json", {onProgress: UnityProgress});
-	gadgets.window.adjustHeight();
+	gadgets.window.adjustHeight(800);
 }
 gadgets.util.registerOnLoadHandler(init);
 </script>
