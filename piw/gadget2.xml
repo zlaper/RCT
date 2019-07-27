@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Pleasure Inc" author="rocketcolastudio" thumbnail="" screenshot="" height="1080" width="1920">
+    <Require feature="dynamic-height" />
+    <Require feature="opensocial-0.8" />
+    <Require feature="opensocial-payment" />
+    <Require feature="nutaku" />
+	<Link rel="payment.handler" href="https://Y369300MTuLB.preview.gamesparks.net/callback/Y369300MTuLB/nutaku/zpTqrNeTwYTCMKg61iDANaxLkF6FuUqn" />
+  </ModulePrefs>
+  <Content preferred_width="1920" type="html" view="canvas">
+    <![CDATA[
+<link rel="stylesheet" href="http://rocketcolastudio.com/piw/pi.css">
+
+<script src="http://rocketcolastudio.com/piw/Build/UnityLoader.js"></script>
+<script>
+var gameInstance;
+
+function UnityProgress(gameInstance, progress) {
+	if (!gameInstance.Module) {
+		return;
+	}
+	
+	const loader = document.querySelector("#loader");
+	if (!gameInstance.progress) {
+		const progress = document.querySelector("#loader .progress");
+		progress.style.display = "block";
+		gameInstance.progress = progress.querySelector(".full");
+		loader.querySelector(".spinner").style.display = "none";
+	}
+	gameInstance.progress.style.transform = `scaleX(${progress})`;
+	if (progress === 1 && !gameInstance.removeTimeout) {
+		gameInstance.removeTimeout = setTimeout(function() {
+			loader.style.display = "none";
+		}, 2000);
+	}
+}
+
+function init() {
+    gameInstance = UnityLoader.instantiate("gameContainer", "http://rocketcolastudio.com/piw/Build/piw.json", {onProgress: UnityProgress});
+	gadgets.window.adjustHeight(800);
+}
+gadgets.util.registerOnLoadHandler(init);
+</script>
+
+<body>
+	<div id="gameContainer"></div>
+	<div id="loader">
+	  <img class="logo" src="http://rocketcolastudio.com/piw/logo.png">
+	  <div class="spinner"></div>
+	  <div class="progress"><div class="full"></div></div>
+	</div>
+</body>
+	  ]]>
+  </Content>
+</Module>
